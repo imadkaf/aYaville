@@ -1,0 +1,13 @@
+# src/aYaline/HelloBundle/Resources/config/validation.yml
+ 
+aYaline\HelloBundle\Model\Feedback:
+    properties:
+        fullName:
+            - NotBlank: { message: "Please fill in your full name" }
+ 
+        email:
+            - NotBlank: { message: "Please fill in your email address" }
+            - Email: ~
+ 
+        message:
+            - NotBlank: { message: "Are you sure you've got nothing to say?" } 

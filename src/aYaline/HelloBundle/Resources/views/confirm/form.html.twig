@@ -1,0 +1,20 @@
+{# src/aYaline/HelloBundle/Resources/views/confirm/form.html.twig #}
+ 
+{% extends "eZDemoBundle::pagelayout.html.twig" %}
+{% block content %}
+<section class="content-view-full">
+<div class="row">
+<div class="span8">
+ 
+<div class="attribute-header">
+<h1>{{ ez_render_field( content, 'title' ) }}</h1>
+</div>
+ 
+<div class="attribute-short">
+{{ ez_render_field( content, 'confirm' ) }}
+</div>
+ 
+</div>
+</div>
+</section>
+{% endblock content %} 

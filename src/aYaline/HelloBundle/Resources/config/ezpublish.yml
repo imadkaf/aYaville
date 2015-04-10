@@ -1,0 +1,16 @@
+# src/aYaline/HelloBundle/Resources/config/ezpublish.yml
+ 
+system:
+    ezdemo_frontend_group:
+        location_view:
+            full:
+                form:
+                    controller: "heliopsis_ezforms.controller:formAction"
+                    template: "aYalineHelloBundle:full:form.html.twig"
+                    match:
+                        Identifier\ContentType: [form]
+            confirm:
+                form:
+                    template: "aYalineHelloBundle:confirm:form.html.twig"
+                    match:
+                        Identifier\ContentType: [form] 

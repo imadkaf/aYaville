@@ -1,0 +1,54 @@
+language: php
+
+# run tests on php 5.4 only and let unit / integration tests deal with php differences
+php:
+  - 5.4
+
+# list of paths/bundle to execute
+env:
+  global:
+    - CONFIG="behat.yml"
+  matrix:
+      # test behat bundle with demo content
+    - CONFIG="vendor/ezsystems/behatbundle/EzSystems/BehatBundle/behat.yml" INSTALL="demoContentNonUniqueDB" PROFILE="default" TEST="behat"
+      # test demo with demo content
+    - INSTALL="demoContentNonUniqueDB" PROFILE="demo" TEST="content"
+      # test REST
+    - PROFILE="rest" TEST="fullJson"
+    - PROFILE="rest" TEST="fullXml"
+
+# test only master (+ Pull requests)
+branches:
+  only:
+    - master
+
+# Get ezpublish5 repo, set it as build dir & install it's packages
+before_install:
+  - export OLD_TRAVIS_BUILD_DIR="$TRAVIS_BUILD_DIR"
+  - export TRAVIS_BUILD_DIR="$HOME/build/ezpublish-community"
+  - cd "$HOME/build"
+
+  # Change the branch and/or remote to use a different ezpublish-community branch
+  - git clone --depth 1 --single-branch --branch master https://github.com/ezsystems/ezpublish-community.git
+  - cd ezpublish-community
+
+  - ./bin/.travis/prepare_system.sh
+  - ./bin/.travis/prepare_sahi.sh
+
+# setup requirements for running tests, move our bundle in & run last requirements script
+before_script:
+  - ./bin/.travis/prepare_ezpublish.sh
+  - rm -fR vendor/ezsystems/behatbundle/EzSystems/BehatBundle
+  - mv "$OLD_TRAVIS_BUILD_DIR" vendor/ezsystems/behatbundle/EzSystems
+
+# execute behat as the script command
+script:
+  - php bin/behat -vv --config $CONFIG --profile $PROFILE --suite $TEST
+
+# disable mail notifications
+notification:
+  email: false
+
+# reduce depth (history) of git checkout
+git:
+  depth: 30

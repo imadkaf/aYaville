@@ -1,0 +1,30 @@
+#services:
+#    a_yaline_hello.example:
+#        class: aYaline\HelloBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+parameters:
+    aYaline_forms_tutorial.form.type.feedback.class: aYaline\HelloBundle\Form\FeedbackType
+    aYaline_forms_tutorial.form_handler.admin_email.class: aYaline\HelloBundle\FormHandler\AdminEmailHandler
+ 
+services:
+    aYaline_forms_tutorial.form.type.feedback:
+        class: %aYaline_forms_tutorial.form.type.feedback.class%
+        tags:
+            - { name: form.type, alias: 'aYaline_feedback' }
+    aYaline_forms_tutorial.form_provider:
+        class: %heliopsis_ezforms.form_provider.content_remoteid_map.class%
+        arguments: [ @form.factory ]
+        calls:
+            - [ addFormType, [ '7181bd9496f91b48a7e8727a9c760160', 'aYaline_feedback' ] ]
+    aYaline_forms_tutorial.form_handler.admin_email:
+        class: %aYaline_forms_tutorial.form_handler.admin_email.class%
+        arguments: [ @swiftmailer.mailer, @templating, @translator ]
+        calls:
+            - [ setContentType, [ 'text/html' ] ]
+            - [ setTemplate, [ 'aYalineHelloBundle:email:feedback.html.twig' ] ]
+            - [ setSubject, [ 'New feedback from the website' ] ]
+            - [ setRecipient, [ %admin.email%, %admin.name% ] ]
+    aYaline_forms_tutorial.handler_provider:
+        class: %heliopsis_ezforms.handler_provider.content_remoteid_map.class%
+        calls:
+            - [ addFormHandler, [ '7181bd9496f91b48a7e8727a9c760160', @aYaline_forms_tutorial.form_handler.admin_email ] ]

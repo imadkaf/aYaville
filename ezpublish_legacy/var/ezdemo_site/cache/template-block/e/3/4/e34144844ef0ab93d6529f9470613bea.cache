@@ -1,0 +1,171 @@
+
+<h2>My latest content</h2>
+
+<table class="list" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Modified</th>
+        <th class="tight"></th>
+    </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/Feedback" title="Feedback">Feedback</a>
+            </td>
+            <td>
+                Form
+            </td>
+            <td>
+                25/03/2015
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/118/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Feedback&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bgdark">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Kilimanjaro" title="Mount Kilimanjaro">Mount Kilimanjaro</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/113/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Kilimanjaro&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Etna" title="Mount Etna">Mount Etna</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/112/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Etna&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bgdark">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Annapurna" title="Mount Annapurna">Mount Annapurna</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/111/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Annapurna&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Matterhorn" title="Mount Matterhorn">Mount Matterhorn</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/110/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Matterhorn&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bgdark">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Fuji" title="Mount Fuji">Mount Fuji</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/109/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Fuji&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Ventoux" title="Mount Ventoux">Mount Ventoux</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/116/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Ventoux&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bgdark">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Aconcagua" title="Mount Aconcagua">Mount Aconcagua</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/115/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Aconcagua&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains/Mount-Stadda" title="Mount Stadda">Mount Stadda</a>
+            </td>
+            <td>
+                Place
+            </td>
+            <td>
+                23/05/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/114/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Mount Stadda&gt;." />
+                </a>
+                        </td>
+        </tr>
+            <tr class="bgdark">
+            <td>
+                <a href="/ezdemo_admin/eZ-Mountains" title="eZ Mountains">eZ Mountains</a>
+            </td>
+            <td>
+                Place list
+            </td>
+            <td>
+                08/04/2014
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/108/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;eZ Mountains&gt;." />
+                </a>
+                        </td>
+        </tr>
+    </table>

@@ -1,0 +1,34 @@
+
+
+<h2>All latest content</h2>
+
+<table class="list" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Published</th>
+        <th>Author</th>
+        <th class="tight"></th>
+    </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_admin/Feedback" title="Feedback">Feedback</a>
+            </td>
+            <td>
+                Form
+            </td>
+            <td>
+                25/03/2015
+            </td>
+            <td>
+                <a href="/ezdemo_admin/Users/Administrator-users/Administrator-User" title="Administrator User">
+                    Administra...
+                </a>
+            </td>
+            <td>
+                            <a href="/ezdemo_admin/content/edit/118/f/eng-GB">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Edit" title="Edit &lt;Feedback&gt;." />
+                </a>
+                        </td>
+        </tr>
+    </table>

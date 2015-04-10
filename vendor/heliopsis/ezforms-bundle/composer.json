@@ -1,0 +1,39 @@
+{
+    "name": "heliopsis/ezforms-bundle",
+    "description": "Symfony forms handling within eZPublish contents",
+    "version": "1.1.0",
+    "type": "symfony-bundle",
+    "keywords": [ "ezpublish", "forms" ],
+    "authors": [
+        {
+            "name": "Heliopsis",
+            "email": "support@heliopsis.net"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/heliopsis/ezforms-bundle"
+    },
+    "require": {
+        "symfony/form": ">=2.3",
+        "ezsystems/ezpublish-kernel": ">=5.3"
+    },
+    "require-dev": {
+        "swiftmailer/swiftmailer": "*",
+        "symfony/templating": ">=2.3",
+        "symfony/translation": ">=2.3"
+    },
+    "suggest": {
+        "swiftmailer/swiftmailer": "Used by Swift Mailer Handlers to email submitted data",
+        "symfony/templating": "Used by Swift Mailer Handlers to render emails",
+        "symfony/translation": "Used by Swift Mailer Handlers to translate email subject"
+    },
+    "license": [ "GPL-2.0" ],
+    "autoload": {
+        "psr-0": {"Heliopsis": ""}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1.x-dev"
+        }
+    }
+}
